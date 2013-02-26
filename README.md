@@ -1,0 +1,4 @@
+mydjango
+========
+
+My Django Project
