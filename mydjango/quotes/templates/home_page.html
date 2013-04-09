@@ -1,0 +1,9 @@
+
+<head>
+<title>Quotes</title>
+</head>
+
+<form action="/contact/" method="post">{% csrf_token %}
+{{ form.quotes }}
+<input type="submit" value="Submit" />
+</form>
