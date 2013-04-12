@@ -1,9 +1,29 @@
 
 <head>
 <title>Quotes</title>
+<style> 
+div
+{
+border:2px solid #a1a1a1;
+padding:10px 10px; 
+background:#dddddd;
+width:500px;
+border-radius:25px;
+}
+</style>
 </head>
 
-<form action="/contact/" method="post">{% csrf_token %}
+<form action="" method="post">{% csrf_token %}
 {{ form.quotes }}
 <input type="submit" value="Submit" />
 </form>
+
+  
+{% for i in all_quotes %}
+  <div>
+  	{{ i.quote }}
+    <br>
+    <br>
+  </div>
+{% endfor %}
+
